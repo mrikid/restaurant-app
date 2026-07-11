@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-4 transition-all duration-200;
+}
+
+.card:hover {
+  @apply shadow-lg;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply bg-primary-500 text-white hover:bg-primary-600;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+
+.btn-success {
+  @apply bg-green-500 text-white hover:bg-green-600;
+}
+
+.btn-warning {
+  @apply bg-yellow-500 text-white hover:bg-yellow-600;
+}
+
+.btn-danger {
+  @apply bg-red-500 text-white hover:bg-red-600;
+}
+
+.input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+}
+
+.badge {
+  @apply px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-pending {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.badge-preparing {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.badge-ready {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-served {
+  @apply bg-purple-100 text-purple-800;
+}
+
+.badge-paid {
+  @apply bg-gray-100 text-gray-800;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
